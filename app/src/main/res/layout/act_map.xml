@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg1">
+
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.amap.api.maps.MapView>
+
+    <include
+        layout="@layout/include_actionbar2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg1"
+        android:orientation="vertical">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FFFFFF"
+            app:stl_defaultTabTextColor="@color/text_color"
+            app:stl_defaultTabTextSize="15sp"
+            app:stl_distributeEvenly="true"
+            app:stl_dividerColor="#F08573"
+            app:stl_dividerThickness="0dp"
+            app:stl_indicatorColor="@color/blue"
+            app:stl_indicatorThickness="3dp"
+            app:stl_indicatorWidth="48dp"
+            app:stl_overlineColor="@color/driver"
+            app:stl_overlineThickness="0.7dp"
+            app:stl_underlineColor="@color/driver"
+            app:stl_underlineThickness="0.7dp"
+            >
+
+        </com.ogaclejapan.smarttablayout.SmartTabLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</RelativeLayout>
